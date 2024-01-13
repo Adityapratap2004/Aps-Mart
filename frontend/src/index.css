@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-x: hidden;
+    
+}
+
+.nav-bg-color {
+    background: linear-gradient(to right,
+            #434343,
+            #000000);
+}
+
+.menu {
+    animation: menu 0.4s ease forwards;
+
+}
+
+@keyframes menu {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+
+}
+
+.home {
+    /* background-image: linear-gradient(to right, #2c3e50, #4ca1af); */
+    background-image: linear-gradient(to right top, #385c85, #335479, #2e4b6d, #294361, #243b55);
+}
+
+.newsletter {
+    background-image: url('./Images/newsletterbg.png');
+
+}
+
+.categoryimg {
+    transition: all ease 0.3s;
+}
+
+.categoryimg :hover {
+    transform: scale(1.2);
+}
+
+.cart {
+    animation: cartani 0.4s ease forwards;
+}
+
+@keyframes cartani {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(-12%);
+    }
+}
+
+.search {
+    animation: searchani 0.4s ease forwards;
+}
+
+
+@keyframes searchani {
+    0%{
+        transform: translateY(100%)
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+    
+}
+
+.account {
+    animation: accountani 0.3s ease-in forwards;
+}
+
+@keyframes accountani {
+    0%{
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(60%);
+    }
+    
+}
+
